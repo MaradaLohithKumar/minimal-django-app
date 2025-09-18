@@ -10,5 +10,7 @@ RUN /opt/venv/bin/pip install pip --upgrade && \
     chmod +x entrypoint.sh
 
 RUN mkdir -p /app/data/api/
+
+EXPOSE 8000
  
 CMD [ "/app/entrypoint.sh" ]
